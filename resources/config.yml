@@ -1,5 +1,6 @@
-#CONFIG
-
-#JOIN MESSAGE USE \n FOR AN NEW LINE!
-
-joinmsg: Welcome to CastleRaidPE.tk 19132\nEnjoy!
+---
+ServerName: Test
+Content: Test
+Button1: Test
+Button2: Test
+...
