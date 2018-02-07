@@ -8,7 +8,7 @@ use pocketmine\plugin\Plugin;
 use pocketmine\scheduler\PluginTask;
 use pocketmine\utils\TextFormat;
 
-class Task extends PluginTask{
+class onJoinTask extends PluginTask{
 
     private $plugin;
     private $player;
@@ -26,7 +26,7 @@ class Task extends PluginTask{
 
     public function mainForm($player) : void{
         $servername = $this->plugin->getConfig()->get("ServerName");
-        $content = $this->plugin->getConfig()->get("Cotent");
+        $content = $this->plugin->getConfig()->get("Content");
         $button1 = $this->plugin->getConfig()->get("Button1");
         $button2 = $this->plugin->getConfig()->get("Button2");
         $form = $this->plugin->getServer()->getPluginManager()->getPlugin("FormAPI")->createModalForm(function (Player $player, array $data){
