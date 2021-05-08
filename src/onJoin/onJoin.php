@@ -13,7 +13,7 @@ use pocketmine\utils\TextFormat;
 class onJoin extends PluginBase implements Listener{
 
     public function onEnable() : void{
-        $this->getServer()->getLogger()->info("onJoin has been Enabled by QuiverlyRivalry");
+        $this->getServer()->getLogger()->info("WelcomeUI is enabled.");
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
         $this->configmakerthingy();
         $this->saveDefaultConfig();
@@ -21,7 +21,7 @@ class onJoin extends PluginBase implements Listener{
     }
 
     public function onDisable() : void{
-        $this->getServer()->getLogger()->alert(TextFormat::RED . "Oh sh*t, plugin is disabled, can we get a R.I.P in the chat.");
+        $this->getServer()->getLogger()->alert(TextFormat::RED . "WelcomeUI is disabled.");
     }
 
     public function configmakerthingy() : void{
